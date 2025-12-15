@@ -1,0 +1,24 @@
+# Environment variables
+.env
+.env.*  # .env.local, .env.dev, .env.production 등
+
+# Logs
+*.log
+logs/
+
+# Node modules (만약 JS/TS 프로젝트면)
+node_modules/
+
+# Python venv
+venv/
+*.pyc
+__pycache__/
+
+# Build outputs
+dist/
+build/
+
+# Editor files
+.DS_Store
+.idea/
+.vscode/

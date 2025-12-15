@@ -1,0 +1,29 @@
+# ============================================
+# TikTok Research Agent - Python Dependencies
+# ============================================
+
+# LLM API SDKs
+anthropic==0.18.0          # Claude API (선택 사항)
+openai==1.12.0             # OpenAI API (GPT-4o, GPT-4o mini)
+
+# 데이터베이스
+pyairtable==2.3.0          # Airtable SDK
+
+# 환경 변수 관리
+python-dotenv==1.0.0
+
+# CLI 인터페이스
+rich==13.7.0               # 터미널 UI (색상, 테이블, 마크다운)
+
+# HTTP 요청
+requests==2.31.0
+
+# 날짜/시간 처리
+python-dateutil==2.8.2
+
+# JSON 처리
+pydantic==2.5.0
+
+# (선택) 벡터 DB - Should-have 단계에서 추가
+# chromadb==0.4.22
+# sentence-transformers==2.3.1

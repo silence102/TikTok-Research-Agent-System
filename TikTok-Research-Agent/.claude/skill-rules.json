@@ -1,0 +1,83 @@
+{
+  "skills": {
+    "agent-dev-guidelines": {
+      "description": "삼양식품 DXT팀 바이브코딩 방법론 기반 에이전트 개발 가이드",
+      "trigger": [
+        "에이전트 개발",
+        "agent development",
+        "워크플로우 생성",
+        "n8n 구현"
+      ],
+      "priority": "high",
+      "autoLoad": true,
+      "files": [
+        ".claude/skills/agent-dev-guidelines/SKILL.md",
+        ".claude/skills/agent-dev-guidelines/ARCHITECTURE.md",
+        ".claude/skills/agent-dev-guidelines/TOOL_USE.md",
+        ".claude/skills/agent-dev-guidelines/WORKFLOWS.md"
+      ]
+    },
+    "prompt-engineering": {
+      "description": "환각 방지 및 RAG 기반 프롬프트 엔지니어링",
+      "trigger": [
+        "프롬프트",
+        "prompt",
+        "LLM",
+        "Claude API",
+        "GPT"
+      ],
+      "priority": "high",
+      "autoLoad": true,
+      "files": [
+        ".claude/skills/prompt-engineering/SKILL.md",
+        ".claude/skills/prompt-engineering/FEW_SHOT.md",
+        ".claude/skills/prompt-engineering/SAMYANG_STYLE.md",
+        ".claude/skills/prompt-engineering/SYSTEM_PROMPTS.md"
+      ]
+    },
+    "tutorial-generator": {
+      "description": "비기술자도 따라할 수 있는 튜토리얼 자동 생성",
+      "trigger": [
+        "튜토리얼",
+        "tutorial",
+        "가이드",
+        "guide",
+        "문서화"
+      ],
+      "priority": "medium",
+      "autoLoad": false,
+      "files": [
+        ".claude/skills/tutorial-generator/SKILL.md",
+        ".claude/skills/tutorial-generator/TEMPLATES.md",
+        ".claude/skills/tutorial-generator/EXTRACTION.md"
+      ]
+    },
+    "mcp-server-dev": {
+      "description": "Model Context Protocol 서버 개발 가이드",
+      "trigger": [
+        "MCP",
+        "mcp server",
+        "model context protocol"
+      ],
+      "priority": "medium",
+      "autoLoad": false,
+      "files": [
+        ".claude/skills/mcp-server-dev/SKILL.md",
+        ".claude/skills/mcp-server-dev/IMPLEMENTATION.md",
+        ".claude/skills/mcp-server-dev/PROTOCOL.md"
+      ]
+    }
+  },
+  "rules": {
+    "loadingStrategy": "lazy",
+    "cacheSkills": true,
+    "maxSkillsPerSession": 2,
+    "fallbackToGeneral": true
+  },
+  "optimization": {
+    "tokenBudget": 200000,
+    "skillTokenLimit": 10000,
+    "summarizeSkillsAfter": 5000,
+    "preferSkillOverGeneral": true
+  }
+}

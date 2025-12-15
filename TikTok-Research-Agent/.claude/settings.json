@@ -1,0 +1,32 @@
+{
+  "hooks": {
+    "session-end": {
+      "command": "bash",
+      "args": [".claude/hooks/update-tutorial.sh"],
+      "description": "Tutorial.md 자동 업데이트 (세션 종료 시)"
+    }
+  },
+  "defaultModel": "claude-sonnet-4-5",
+  "preferredLanguage": "ko",
+  "contextOptimization": {
+    "maxTokens": 200000,
+    "summarizeAfter": 150000,
+    "preserveDocuments": [
+      "docs/PRD.md",
+      "docs/Ideation.md",
+      ".claude/skills/**/*.md"
+    ]
+  },
+  "codeStyle": {
+    "indentation": 2,
+    "quotes": "double",
+    "lineLength": 100,
+    "framework": "vibe-coding"
+  },
+  "agentGuidelines": {
+    "claudeMdMaxLines": 200,
+    "documentSeparation": true,
+    "domainFolders": ["docs", ".claude/skills"],
+    "commitOnlyEssentials": true
+  }
+}
